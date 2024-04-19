@@ -27,3 +27,6 @@ class Produto:
   @qtd.setter
   def qtd(self, novoQtd):
     self._qtd = novoQtd
+
+  def calculaImposto(self):
+    return self._valor + (self._valor * 0.15)
